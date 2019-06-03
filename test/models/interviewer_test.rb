@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class InterviewerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "interviewer can have a schedule" do
+    i = interviewers(:hr)
+    assert i.interview_schedule != nil
+  end
 end

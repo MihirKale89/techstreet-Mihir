@@ -6,7 +6,7 @@
 #
 <% ['first_driver_interview', 'second_driver_interview', 'first_forklift_interview', 'second_forklift_interview'].each do |interview| %>
 <% counter = 0 %>
-<% ['license','experience', 'delays', 'biggest_weakness', 'biggest_strength'].shuffle.each do |question| %>
+<% ['license','experience', 'delays', 'biggest_weakness', 'biggest_strength'].each do |question| %>
 <% counter += 1 %>
 interview_<%= interview %>_<%= question %>:
   interview: <%= interview %>
